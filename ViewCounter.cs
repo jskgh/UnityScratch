@@ -5,14 +5,15 @@ using UnityEngine;
 public class ViewCounter : MonoBehaviour
 {
     // Public params
-    public int viewCount;
-    public int startingViewCount;
-    public int viewsFromCollectingNote = 500;
-    public int viewsFromNearbyGuardMax = 5;
-    public int viewsLostFromGuardDistance = 1;
-    public int viewsLostFromBeingStill = 1;
-    public float guardDistanceThreshold = 5.0f;
-
+    public int viewCount; // View count to be displayed by GUI/highscore
+    public int startingViewCount; // View count the player starts with - duh!
+    public int viewsFromCollectingNote = 500; // Instant views from collecting a note
+    public int viewsFromNearbyGuardMax = 5; // The most views you can earn by being close to a guard
+    public int viewsLostFromGuardDistance = 1; // How many views are lost if you're too far from a guard
+    public int viewsLostFromBeingStill = 1; // How many views are lost if you're slow/still
+    // public int viewsFromRescuingFriend = ??
+    public float guardDistanceThreshold = 5.0f; // How close you need to be to a guard to start earning points
+    
 
     // Working vars
     int t;
